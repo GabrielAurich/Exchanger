@@ -1,0 +1,83 @@
+<form>
+  <div id="input_fields">
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name"><br>
+  </div>
+  <br>
+  <button type="button" onclick="duplicateFields()">Duplicar campo</button>
+</form>
+
+<script>
+function duplicateFields() {
+  // Obtém o elemento a ser duplicado
+  var inputField = document.getElementById("input_fields");
+
+  // Cria uma nova cópia do elemento
+  var newInputField = inputField.cloneNode(true);
+
+  // Adiciona a cópia ao formulário
+  inputField.parentNode.appendChild(newInputField);
+}
+</script>
+
+
+
+
+contar cliques
+
+<button onclick="countClicks()">Clique aqui</button>
+<br>
+<br>
+<p>Este botão foi clicado <span id="click_count">0</span> vezes.</p>
+
+<script>
+let count = 0;
+
+function countClicks() {
+  count++;
+  document.getElementById("click_count").innerHTML = count;
+}
+</script>
+
+
+<form>
+  <div id="input_fields">
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name"><br>
+  </div>
+  <br>
+  <button type="button" onclick="addField()">Adicionar campo</button>
+  <button type="button" onclick="removeField()">Remover campo</button>
+</form>
+
+<script>
+function addField() {
+  // Obtém o elemento a ser duplicado
+  var inputField = document.getElementById("input_fields");
+
+  // Cria uma nova cópia do elemento
+  var newInputField = inputField.cloneNode(true);
+
+  // Adiciona a cópia ao formulário
+  inputField.parentNode.appendChild(newInputField);
+}
+
+function removeField() {
+  // Obtém a lista de campos de entrada
+  var inputFields = document.getElementsByTagName("input");
+  // Obtém o último campo de entrada da lista
+  var lastInputField = inputFields[inputFields.length - 1];
+
+  // Remove o último campo de entrada do formulário
+  lastInputField
+
+
+
+<style>
+  .campo {
+    display: inline-block;
+  }
+</style>
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" class="campo">
