@@ -1,13 +1,15 @@
-function addField() {
-  // Obtém o elemento a ser duplicado
-  var inputField = document.getElementById("input_fields");
+var fieldCount = 0; // Contador de campos adicionados dinamicamente
 
-  // Cria uma nova cópia do elemento
-  var newInputField = inputField.cloneNode(true);
+document.getElementById('add-field').addEventListener('click', function() {
+  // Crie um novo elemento <input>
+  var input = document.createElement('input');
+  input.type = 'text';
+  input.name = 'field' + fieldCount; // Atribua um nome ao campo
+  fieldCount++; // Incremente o contador de campos
 
-  // Adiciona a cópia ao formulário
-  inputField.parentNode.appendChild(newInputField);
-}
+  // Adicione o elemento ao formulário
+  document.getElementById('input_fields').appendChild(input);
+});
 
 function removeField() {
   // Obtém a lista de campos de entrada

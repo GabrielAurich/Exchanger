@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchanger</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+            background-color: #041E42;
+            color:white;
+            font-family:Cambria, Arial ;
+            font-size: 30px;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-size: 10px;
+        }
+
+        form{
+            font-family: Arial;
+        }
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        form input,form textarea{
+            outline: unset;
+            padding: 2px;
+            width: 200px;
+            border: 0.5px solid cornflowerblue;
+            border-radius:20px;
+
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    <header><img src="Scania.png" width="60" height="60" style="position:relative;top:0px;left:-15px;">Troca de uniformes de centro de custo</header>
+    <section>
+    <form action="https://sheetdb.io/api/v1/c9aicw5s2gz72" method="POST" name="Form">
+        <label for="CC" style="align-items: center;">Centro de custo:</label><br>
+        <input type="text" id="CC" name="data[Centrodecusto]" size="5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="input_fields">
+          <div id="input_fields" style="display:inline-block">
+        <label for="registro">Registro</label>
+        <input type="text" id="registro" name="data[name]" ><br>
+          <br>
+        <label for="camisa_size">Camisa</label>
+        <select id="camisa_size" name="data[Tamanho_da_Camisa]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>        
+        <label for="pants_size">Calça</label>
+        <select id="pants_size" name="data[Tamanho_da_Calca]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>  
+        <label for="colete_size">Colete</label>
+        <select id="colete_size" name="data[Tamanho_do_Colete]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>  
+        <label for="blusa_size">Blusa</label>
+        <select id="blusa_size" name="data[Tamanho_da_Blusa]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>  
+        <label for="jaqueta_size">Jaqueta</label>
+        <select id="jaqueta_size" name="data[Tamanho_da_Jaqueta]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>  
+        <label for="bermuda_size">Bermuda</label>
+        <select id="bermuda_size" name="data[Tamanho_da_Bermuda]">
+          <option value="p">P</option>
+          <option value="pp">PP</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+          <option value="gg">XG</option>
+          <option value="gg">2XG</option>
+          <option value="gg">3XG</option>
+          <option value="gg">4XG</option>
+          <option value="gg">5XG</option>
+          <option value="gg">EL</option>
+        </select>  
+
+        <label for="meia_size">Meia</label>
+        <select id="meia_size" name="data[Tamanho_da_Meia]">
+          <option value="p"> P </option>
+          <option value="m"> M </option>
+          <option value="g"> G </option>
+          <br><br>
+        </select>  
+    </section>
+    </div>
+  </div>
+    <section>
+    <button type="button" onclick="addField()" style="left:50px">Adicionar campo</button>
+    <button type="button" onclick="removeField()">Remover campo</button>
+    <button type="submit">Enviar</button>
+</section>
+      </form>
+
+      
+</body>
+<script src="java.js"></script>
+</html>
