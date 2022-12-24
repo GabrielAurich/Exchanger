@@ -8,7 +8,7 @@ document.getElementById('add-field').addEventListener('click', function() {
   fieldCount++; // Incremente o contador de campos
 
   // Adicione o elemento ao formulário
-  document.getElementById('input_fields').appendChild(input);
+  document.getElementById('fields').appendChild(input);
 });
 
 function removeField() {
